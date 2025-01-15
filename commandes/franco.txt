@@ -1,0 +1,90 @@
+git init
+
+git remote add origin git@github.com:ssossor/massonneuse-batteuse.git
+
+-- Ajout des dossiers html, css, et php et des fichiers html/index.html, style.css, index.php
+
+git add .
+
+git commit -m "first commit !"
+
+git branch main
+
+git checkout main
+
+git push origin main
+
+git branch css -- je suis chargé du css, je créé donc une branche css pour mon travail
+
+git checkout css
+
+-- Première modif du stlye.css
+
+git add css/style.css
+
+git commit -m "ajout du reset"
+
+git push origin css
+
+-- Deuxième modif du style.css
+
+git add css/style.css
+
+git commit -m "added some css"
+
+-- Résolution d'un bug avec un fichier à supprimer dans la branche html
+
+git checkout html
+
+git rm accueil.html
+
+git rm login2.html
+
+git commit -m "deleted accueil.html and login2.html"
+
+git push origin html
+
+-- Ajout du mobile.css + petits ajouts dans le style.css
+
+git add css/
+
+git commit -m "added mobile.css + some changes in style.css"
+
+git push origin css
+
+-- Dernière modif du css, ajout du design pour le formulaire d'Inscription
+
+git add css/
+
+git commit -m "added css for the form"
+
+git push origin css
+
+-- Modifications dans index.php et login.php pour que le css fonctionne bien
+
+git checkout php
+
+git add .
+
+git commit -m "small changes in index.php and login.php"
+
+git push origin php
+
+-- Fusion de la branche php et la branche css dans main
+
+git checkout main
+
+git pull origin php
+
+git merge css
+
+git push origin main
+
+-- Ajout des fichiers de commandes
+
+git add .
+
+git commit "added franco.txt"
+
+git push origin main
+
