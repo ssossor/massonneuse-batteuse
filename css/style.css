@@ -33,6 +33,25 @@ nav a:hover {
 text-decoration: underline;
 }
 
+main {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+}
+
+p {
+width: 100%;
+}
+
+article {
+margin: 1%;
+padding: 0.7%;
+border: solid 1px;
+border-color: #4CAF50;
+border-radius: 10px;
+width: 29%
+}
+
 footer {
 margin-top: 2rem;
 color: #888;
