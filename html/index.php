@@ -12,8 +12,8 @@
 	<h1>Bienvenue sur notre site collaboratif</h1>
    </header>
    <nav>
-	<a href="<?=ROOT?>index.php">Acceuil</a>
-	<a href="<?=ROOT?>login.php">Connexion</a>
+	<a href="<?=ROOT?>html/index.php">Acceuil</a>
+	<a href="<?=ROOT?>html/login.php">Connexion</a>
 	<a href="#">Contact</a>
    </nav>
    <main>
