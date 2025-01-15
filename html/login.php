@@ -1,4 +1,7 @@
-<?php define('ROOT, './') ?>
+<?php define('ROOT, './');
+session_start()
+?>
+
 # on mets pas de ; parce qu'on est des pros après fermute de la balise php
 
 <!DOCTYPE html>

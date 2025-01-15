@@ -1,4 +1,7 @@
-<?php define('ROOT', './')?>
+<?php define('ROOT', './');
+session_start();
+?>
+
 
 <!DOCTYPE html>
 <html lang="fr">
