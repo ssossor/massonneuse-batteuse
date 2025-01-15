@@ -12,7 +12,7 @@ session_start()
     <title>Login</title>
 </head>
 <body>
-    <h1>Connexion</h1>
+    <header><h1>Connexion</h1></header>
     <?php if(isset($_SESSION['error'])) {
             echo $_SESSION['error'];
             unset($_SESSION['error']);
