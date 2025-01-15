@@ -2,3 +2,38 @@
 margin: 0;
 padding: 0;
 }
+
+
+body {
+font-family: Arial, sans-serif;
+text-align: center;
+margin: 0;
+padding: 0;
+background-color: #f4f4f9;
+}
+
+header {
+background-color: #4CAF50;
+color: white;
+padding: 1rem 0;
+}
+
+nav {
+margin: 1rem 0;
+}
+
+nav a {
+text-decoration: none;
+color: #4CAF50;
+margin: 0 1rem;
+font-weight: bold;
+}
+
+nav a:hover {
+text-decoration: underline;
+}
+
+footer {
+margin-top: 2rem;
+color: #888;
+}
