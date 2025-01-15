@@ -1,4 +1,5 @@
-
+<?php define('ROOT, './') ?>
+# on mets pas de ; parce qu'on est des pros après fermute de la balise php
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -9,9 +10,13 @@
 </head>
 <body>
     <h1>Connexion</h1>
-    <form action="/login" method="POST">
-	<label for="username">Nom d'utilisateur :</label>
-	<input type="text" id="username" name="username" required>
+    <?php if(isset($_SESSION['error'])) {
+            echo $_SESSION['error'];
+            unset($_SESSION['error']);
+            }?>
+    <form action="<?=ROOT?>../php/php_login.php" method="POST">
+	<label for="login">Nom d'utilisateur :</label>
+	<input type="text" id="login" name="login" required>
 	<br><br>
 	<label for="password">Mot de passe :</label>
 	<input type="password" id="password" name="password" required>
